@@ -1,10 +1,11 @@
 language: node_js
 
 node_js:
--15.3.0
+- 15.3.0
 - node
 
 cache: npm
 
 script:
 -npm test
+-make test
