@@ -1,0 +1,23 @@
+{
+  "name": "tuni-swtest-testgroup",
+  "version": "1.0.0",
+  "description": "SW test group work",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olliru/tuni-swtest-testgroup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olliru/tuni-swtest-testgroup/issues"
+  },
+  "homepage": "https://github.com/olliru/tuni-swtest-testgroup#readme",
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  }
+}
