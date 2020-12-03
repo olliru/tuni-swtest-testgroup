@@ -1,6 +1,7 @@
 language: node_js
 
 node_js:
--10.19.0
+-15.3.0
+- node
 
 cache: npm
