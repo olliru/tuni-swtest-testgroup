@@ -7,9 +7,9 @@ import divide from '../src/divide.js';
 
 describe('Util library', function() {
   describe('divide', function() {
-    // it('should return 3 when dividing 9 with 3', function() {
-    //   assert.equal(divide(3,9), 3);
-    // });
+     it('should return 3 when dividing 9 with 3', function() {
+       assert.equal(divide((9,3)), 3);
+     });
   });
 });
 
