@@ -7,11 +7,14 @@ import eq from '../src/eq.js';
 
 describe('Util library', function() {
   describe('eq', function() {
-    it('are the words the same', function() {
-      assert.equal(eq('word', 'word'), true);
+    it('Words should are the same', function() {
+      assert.equal(eq('lactose-free', 'lactose-free'), true);
     });
-    it('are the words the same', function() {
-      assert.equal(eq('word', 'adf'), false);
+    it('Words should not are the same', function() {
+      assert.equal(eq('laktose-free', 'lactose-free'), false);
+    });
+    it('Different letter size: Words should not are the same', function() {
+      assert.equal(eq('laCtose-free', 'lactose-free'), false);
     });
   });
 });
