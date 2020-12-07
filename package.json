@@ -44,6 +44,7 @@
       "text"
     ],
     "sourceMap": false,
-    "instrument": false
+    "instrument": false,
+    "exclude": "src/.internal/*.js" 
   }
 }
