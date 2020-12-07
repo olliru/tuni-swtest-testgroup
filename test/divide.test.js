@@ -16,9 +16,6 @@ describe('Util library', function() {
      it('Negative numbers: should return -3000 when dividing 9000 with -3000', function() {
        assert.equal(divide((9000,-3000)), -3000);
      });
-    //  it('Decimal values: should return 3.55 when dividing 45.34 with 12.78', function() {
-    //   assert.equal(divide((45,15)), 3);
-    //  });
   });
 });
 
