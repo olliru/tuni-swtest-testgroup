@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src/*.js -d src",
-    "mochatest": "mocha",
-    "test": "cross-env NODE_ENV=test nyc _mocha test/*.js",
+    "test": "nyc mocha",
     "cover": "cross-env NODE_ENV=test nyc _mocha test/*.js",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
     "prepublish": "npm run build"
@@ -44,6 +43,6 @@
     ],
     "sourceMap": false,
     "instrument": false,
-    "exclude": "src/.internal/*.js" 
+    "exclude": ["src/.internal/*.js", "test/*.js"]
   }
 }
