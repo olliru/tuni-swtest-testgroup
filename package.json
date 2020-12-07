@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src/*.js -d src",
-    "test": "cross-env NODE_ENV=test nyc _mocha test/*.js",
+    "test": "mocha",
     "cover": "cross-env NODE_ENV=test nyc _mocha test/*.js",
-    "mochatest": "nyc _mocha --timeout=3000",
-    "coverib": "istanbul cover _mocha",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
     "prepublish": "npm run build"
   },
