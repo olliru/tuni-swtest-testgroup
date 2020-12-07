@@ -7,14 +7,14 @@ import add from '../src/add.js';
 
 describe('Util library', function() {
   describe('add', function() {
-    it('should return 3 when adding 1 to 2', function() {
-      assert.equal(add(1,2), 3);
+    it('Decimals: should return 49.98 when adding 29.99 to 19.99', function() {
+      assert.equal(add(29.99, 19.99), 49.98);
     });
-    it('should return 0 when adding 0 to 0', function() {
-      assert.equal(add(0,0), 0);
+    it('Large numbers: should return 30083.29 when adding 30079.30 to 3.99', function() {
+      assert.equal(add(30079.30, 3.99), 30083.29);
     });
-    it('should return 5 when adding 3 to 2', function() {
-      assert.equal(add(3,2), 5);
+    it('Zero: should return 50 when adding 50 to 0', function() {
+      assert.equal(add(50, 0), 50);
     });
   });
 });
