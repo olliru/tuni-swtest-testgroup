@@ -43,6 +43,9 @@
     ],
     "sourceMap": false,
     "instrument": false,
-    "exclude": ["src/.internal/*.js", "test/*.js"]
+    "exclude": [
+      "src/.internal/*.js",
+      "test/*.js"
+    ]
   }
 }
