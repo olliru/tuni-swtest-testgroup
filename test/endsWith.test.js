@@ -19,6 +19,9 @@ describe('Util library', function() {
      it('Returns true for special character', function() {
        assert.equal(endsWith('abcdẽ', 'ẽ'), true);
      });
+     it('Returns false with negative position', function() {
+       assert.equal(endsWith('abcd', 'a', -1), false);
+     });
   });
 });
 

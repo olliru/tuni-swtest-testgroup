@@ -6,10 +6,11 @@ node_js:
 
 cache: npm
 
-after_success:
-- npm run coveralls
-
 addons:
   artifacts: true
     paths:
     - $(ls coverage/lcov-report/* | tr "\n" ":")
+
+after_success:
+- npm run coveralls
+
